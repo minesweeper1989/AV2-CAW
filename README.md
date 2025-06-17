@@ -22,19 +22,19 @@ Também deve conter os seguintes requisitos técnicos:
 
      \> Deve conter duas interações com o usuário (não pode usar alert).
 
-     \> Pelo menos uma tabela implementada no site.
+* Pelo menos uma tabela implementada no site.
 
-     \> Barra lateral do cabeçalho até o rodapé.
+* Barra lateral do cabeçalho até o rodapé.
 
-     \> Imagens
+* Imagens
 
-     \> Vídeo ou áudio
+* Vídeo ou áudio
 
-* Itens Opcionais:
+Itens Opcionais:
 
-     \> Layout Responsivo
+* Layout Responsivo
 
-     \> Uso de Canvas / SVG
+* Uso de Canvas / SVG
 
 ## Informações Gerais
 
