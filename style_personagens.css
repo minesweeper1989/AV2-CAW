@@ -1,0 +1,119 @@
+header a:last-of-type{
+     text-transform: uppercase;
+}
+ section.conteudoaside {
+     display: flex;
+     align-items: flex-start;
+     max-width: 100%;
+}
+ aside {
+     position: sticky;
+     top: 90px;
+     left: 150px;
+}
+ aside img {
+     width: 300px;
+     height: auto;
+     border: 2px solid red;
+}
+ .conteudoprincipal {
+     flex: 1;
+     text-align: center;
+}
+ .trio{
+     padding: 110px;
+     width: 30vw;
+}
+ #herois{
+     display: flex;
+     padding-bottom: 100px;
+}
+ #herois > button{
+     text-align: center;
+     font-size: 25px;
+     width: 30%;
+     height: 200px;
+     margin: 0 auto;
+     border: 0;
+     filter: brightness(60%);
+     background: none;
+     transition: filter 0.2s ease;
+}
+ #herois > button img{
+     height: 100%;
+     margin: 0px;
+}
+ #herois > button:hover{
+     filter: brightness(100%);
+     border: 0;
+}
+ .selecionada{
+     filter: brightness(100%)!important;
+}
+ #info{
+     display: flex;
+     width: 50vw;
+     text-align: center;
+     margin: 0 auto;
+     position: relative;
+}
+ .lado h3{
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+}
+ #info > section{
+     margin: 20px;
+}
+ .playerstat, .line{
+     height: 170px;
+}
+ .line{
+     position: absolute;
+     bottom: 15px;
+     left: 50%;
+}
+ .lado > p, h4{
+     margin: 5px 0;
+}
+ .lado p:not(:last-of-type){
+     border-bottom: 1px solid white ;
+}
+ .descricao{
+     text-align: center;
+}
+ .descricao::before{
+     content: '“';
+     margin: 20px;
+}
+ .descricao::after{
+     content: '”';
+     margin: 20px;
+}
+ #info p.dark{
+     text-align: left;
+}
+ .icone::before{
+     content: '';
+     display: inline-block;
+     height: 20px;
+     width: 20px;
+     background-repeat: no-repeat;
+     background-size: contain;
+     margin-right: 5px;
+}
+ .magia::before{
+     background-image: url('conteudo/info/magia.png');
+}
+ .defesa::before{
+     background-image: url('conteudo/info/defesa.png');
+}
+ .ataquesusie::before{
+     background-image: url('conteudo/info/ataquesusie.png');
+}
+ .ataqueralsei::before{
+     background-image: url('conteudo/info/ataqueralsei.png');
+}
+ .ataquekris::before{
+     background-image: url('conteudo/info/ataquekris.png');
+}

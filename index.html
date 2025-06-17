@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELTARUNE</title>
+    <link rel="icon" href="conteudo/favicon.png">
+    
+    <link rel="stylesheet" href="style_geral.css">
+    <link rel="stylesheet" href="style_index.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="conteudo/toby.png">
+        <nav>
+            <a class="link_animation ativo" href="index.html">home</a>
+            <a class="link_animation" href="#sobre">sobre</a>
+            <a class="link_animation" href="#timer">data</a>
+            <a class="link_animation" href="#capitulos">capítulos</a>
+            <a class="link_animation" href="#arte">arte</a>
+            <a class="link_animation" href="personagens.html">personagens</a>
+        </nav>
+
+        <label class="btn" for="pausar">
+            <input id="pausar" type="checkbox"/>
+            Reduzir Movimentos
+        </label>
+    </header>
+
+    <aside>
+        <section class="esquerda">
+            <img src="conteudo/logos/logo.png">
+        
+            <section class="jogavel">
+                <img src="conteudo/logos/steam.png">
+                <img src="conteudo/logos/switch.png">
+                <img src="conteudo/logos/switch2.png">
+                <img src="conteudo/logos/ps4.png">
+                <img src="conteudo/logos/ps5.png">
+            </section>
+
+            <section class="botao">
+                <button onclick="abrir()" class="azul">Assistir Trailer</button>
+                <button class="branco" onclick="window.open('https://store.steampowered.com/app/1671210/DELTARUNE/')">Comprar Jogo</button>
+            </section>
+
+            <button class="abaixo" onclick="window.open('https://www.fangamer.com/collections/deltarune')">Produtos</button>
+        
+        </section>
+        <img src="conteudo/gifs/bg.gif" class="movimento castelo">
+    </aside>
+
+    <article id="popup" class="fechado">
+        <button onclick="fechar()">✕</button>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AdY8c0XQCcM?si=TJj1oqmLAlhaUT0-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+
+    <main>
+        <section id="sobre">
+            <img src="conteudo/gifs/key-art.gif" class="movimento">
+            <article>
+                <h4 class="subnome">// sobre</h4>
+                <h2>Um Jogo Onde Escolhas Não Importam... <span class="highlight">ou Importam?</span></h2>
+                <p class="dark">
+                    Em um mundo familiar, escolhas aparentemente irrelevantes revelam mistérios, personagens cativantes e reviravoltas que desafiam a lógica dos jogos comuns.
+                </p>
+
+                <section class="lista">
+                <ul>
+                    <li>História Cativante</li>
+                    <li>Personagens Carismáticos</li>
+                </ul>
+                <ul>
+                    <li>Arte Expressiva</li>
+                    <li>Trilha Sonora Magnífica</li>
+                </ul>
+                </section>
+
+                <button onclick="window.open('https://pt.wikipedia.org/wiki/Deltarune')">Saiba Mais ↗</button>
+            </article>
+        </section>
+
+        <section id="embreve">
+            <h3>Em breve...</h3>
+            <h3>...</h3>
+            <h3>.</h3>
+            <h3>.</h3>
+            <h1 class="highlight">NOVOS CAPÍTULOS!</h1>
+        </section>
+ 
+        <section id="timer">
+            <h4 class="highlight">// DATA</h4>
+            <h2>Não Perca A Nossa Próxima Aventura!</h2>
+            <article class="countdown">
+               <section class="container">
+                   <h1 id="dias">0</h1>
+                   <h4 class="subnome">DIAS</h4>
+               </section>
+
+               <h4>:</h4>
+
+               <section class="container">
+                   <h1 id="horas">00</h1>
+                   <h4 class="subnome">HORAS</h4>
+               </section>
+               
+               <h4>:</h4>
+
+               <section class="container">
+                   <h1 id="minutos">00</h1>
+                   <h4 class="subnome">MINUTOS</h4>
+               </section>
+               
+               <h4>:</h4>
+
+               <section class="container">
+                   <h1 id="segundos">00</h1>
+                   <h4 class="subnome">SEGUNDOS</h4>
+               </section>
+            </article>
+            <img src="conteudo/gifs/Lancer_item.gif" class="movimento">
+        </section>
+
+        <section id="capitulos">
+            <article>
+            <section class="top">
+                <section>
+                    <h4 class="subnome">// capítulos</h4>
+                    <h2>Compre Somente Uma Vez!</h2>
+                </section>
+
+                <article class="compre">
+                    <h4>preço total</h4>
+                    <h2 class="highlight">R$73,99</h2>
+                    
+                    <button class="azul btn" onclick="window.open('https://store.steampowered.com/app/1671210/DELTARUNE/')">COMPRAR</button>
+                </article>
+            </section>
+            
+            <table>
+                <tr>
+                    <td>multiplayer</td>
+                    <td>✕</td>
+                </tr>
+                <tr>
+                    <td>acesso a todos os capítulos</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>legendas em portugues</td>
+                    <td>✕</td>
+                </tr>
+                <tr>
+                    <td>suporte de controle remoto</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>macOS</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>trilha sonora digital</td>
+                    <td>✕</td>
+                </tr>
+            </table>
+        </article>
+            
+            <img src="conteudo/gifs/idk.gif" class="movimento">
+        </section>
+
+        <section id="arte">
+            <img id="grande" src="conteudo/arte/1.png">
+            <article>
+                <h4 class="subnome">// arte</h4>
+                <h2>A Arte De Deltarune</h2>
+                <p class="dark">
+                    A arte de Deltarune é assinada por <span class="highlight">Temmie Chang</span>, cuja criatividade e estilo único dão vida ao universo do jogo. Seus desenhos combinam simplicidade e expressividade, trazendo personalidade e emoção a cada personagem e cenário. A estética visual complementa perfeitamente a atmosfera misteriosa e cativante da narrativa. 
+                </p>
+                <img class="mini selecionada" src="conteudo/arte/1.png">
+                <img class="mini" src="conteudo/arte/2.png">
+                <img class="mini" src="conteudo/arte/3.png">
+                <img class="mini" src="conteudo/arte/4.png">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p><span class="darker">© </span><span class="dark">DELTARUNE </span>2018</p>
+        
+        <section class="toby">
+            <img src="conteudo/gifs/dog-eating-bone-eating.gif" class="movimento">
+            <p>TOBY <span class="dark">FOX</span></p>
+        </section>
+
+        <section class="socials">
+            <a target="_blank" href="https://bsky.app/profile/undertale.com">
+                <img src="conteudo/logos/Bluesky--Streamline-Simple-Icons.png">
+            </a>
+
+            <a target="_blank" href="https://x.com/undertale">
+                <img src="conteudo/logos/twitter-icon.png">
+            </a>
+
+            <a target="_blank" href="https://deltarune.com/newsletter/">
+                <img src="conteudo/logos/Email.png">
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
+
+<script>
+    let countdowntimer=new Date("August 4, 2025 12:00:00").getTime();
+    let atual=setInterval(function(){
+        let atual=new Date().getTime();
+        let diferenca= countdowntimer-atual;
+
+        let dias=Math.floor(diferenca/(1000*60*60*24));
+        let horas=Math.floor((diferenca%(1000*60*60*24))/(1000*60*60));
+        let minutos=Math.floor((diferenca%(1000*60*60))/(1000*60));
+        let segundos=Math.floor((diferenca%(1000*60))/(1000));
+
+        document.getElementById("dias").textContent=dias;
+        document.getElementById("horas").textContent=String(horas).padStart(2,'0');
+        document.getElementById("minutos").textContent=String(minutos).padStart(2,'0');
+        document.getElementById("segundos").textContent=String(segundos).padStart(2,'0');
+
+        if(diferenca<0){
+            document.getElementById("dias").textContent="0";
+        document.getElementById("horas").textContent="00";
+        document.getElementById("minutos").textContent="00";
+        document.getElementById("segundos").textContent="00";
+        }
+    }, 1000);
+
+
+    let miniatura=document.querySelectorAll('.mini');
+    let destaque=document.getElementById('grande');
+    miniatura.forEach(function(mini){
+        mini.addEventListener('click', function(){
+            destaque.src=this.src;
+            miniatura.forEach(i=>i.classList.remove('selecionada'));
+            this.classList.add('selecionada');
+        });
+    });
+
+    let popup=document.getElementById("popup");
+    let abriu=document.getElementsByClassName('abriu');
+    let video = document.getElementById("video");
+    let src = video.src; 
+    function abrir(){
+        popup.classList.remove('fechado');     
+        video.src = src; 
+    };
+
+    function fechar(){
+        popup.classList.add('fechado');
+        video.src = "";       
+    };
+
+</script>

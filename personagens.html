@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELTARUNE</title>
+    <link rel="icon" href="conteudo/favicon.png">
+    
+    <link rel="stylesheet" href="style_geral.css">
+    <link rel="stylesheet" href="style_personagens.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="conteudo/toby.png">
+        <nav>
+            <a class="link_animation" href="index.html">home</a>
+            <a class="link_animation" href="index.html#sobre">sobre</a>
+            <a class="link_animation" href="index.html#timer">data</a>
+            <a class="link_animation" href="index.html#capitulos">capítulos</a>
+            <a class="link_animation" href="index.html#arte">arte</a>
+            <a class="link_animation ativo" href="personagens.html">personagens</a>
+        </nav>
+
+        <label class="btn" for="pausar">
+            <input id="pausar" type="checkbox"/>
+            Reduzir Movimentos
+        </label>
+    </header>
+
+
+    <section class="conteudoaside">
+
+        <aside>
+            <a target="_blank" href="https://deltarune.com/sweepstakes/">
+                <img src="https://i.redd.it/plouiav121q91.jpg">
+            </a>
+        </aside>
+
+        <main class="conteudoprincipal"> 
+            <h4 class="subnome">// personagens</h4>
+            <h2>Conheça Nossos Heróis</h2>
+            <section id="herois">
+                <button onclick="mostrarInfo('kris')">
+                    <img src="conteudo/info/botaoKris.png">
+                    <br>
+                    Um Humano...
+                </button>
+
+                <button onclick="mostrarInfo('susie')">
+                    <img src="conteudo/info/botaoSusie.png">
+                    <br>
+                    ..Um Monstro...
+                </button>
+
+                <button onclick="mostrarInfo('ralsei')">
+                    <img src="conteudo/info/botaoRalsei.png">
+                    <br>
+                    ..E Um Principe Das Trevas!
+                </button>
+            </section>
+
+            <article id="info"></article>
+
+            
+        </main>
+    </section>
+
+    
+
+    <footer>
+        <p><span class="darker">© </span><span class="dark">DELTARUNE </span>2018</p>
+        
+        <section class="toby">
+            <img src="conteudo/gifs/dog-eating-bone-eating.gif" class="movimento">
+            <p>TOBY <span class="dark">FOX</span></p>
+        </section>
+
+        <section class="socials">
+            <a target="_blank" href="https://bsky.app/profile/undertale.com">
+                <img src="conteudo/logos/Bluesky--Streamline-Simple-Icons.png">
+            </a>
+
+            <a target="_blank" href="https://x.com/undertale">
+                <img src="conteudo/logos/twitter-icon.png">
+            </a>
+
+            <a target="_blank" href="https://deltarune.com/newsletter/">
+                <img src="conteudo/logos/Email.png">
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
+
+<script>
+    const info={
+        kris: `
+        <section class="lado">
+                <h3 class="highlight">Kris</h3>
+                <img class="playerstat" src="conteudo/info/kris.png">
+                <!--barra de vida-->
+                <p class="icone ataquekris">Ataque: 10</p>
+                <p class="icone defesa">Defesa: 2</p>
+                <p class="icone magia">Magia: 0</p>
+                <p>Equipado: Espada de Madeira</p>
+            </section>
+            <section>
+                <p class="descricao">LV1 Corpo Humano, contém uma ALMA humana.</p>
+                <!--colocar uma borda aq-->
+                <p class="dark">* Quieto e misterioso, esse humano faz parte de uma estranha profecia na qual ele deve enfrentar o Mundo das Trevas, e eventualmente decidir o destino do mundo com sua lâmina.</p>
+                <img class="line" src="conteudo/info/kris_line.png">
+        </section>`,
+        susie: `
+        <section class="lado">
+                <h3 class="highlight">Susie</h3>
+                <img class="playerstat" src="conteudo/info/susie.png">
+                <!--barra de vida-->
+                <p class="icone ataquesusie">Ataque: 14</p>
+                <p class="icone defesa">Defesa: 12</p>
+                <p class="icone magia">Magia: 1</p>
+                <p>Equipado: Machadão de Mane</p>
+            </section>
+            <section>
+                <p class="descricao">LV1 Garota Malvada, Não fará nada além de lutar.</p>
+                <!--colocar uma borda aq-->
+                <p class="dark">* Um monstro com uma má reputação, ela é rude e indiferente, derrotando os inimigos em seu caminho com seu machado.</p>
+                <img class="line" src="conteudo/info/susie_line.png">
+        </section>`,
+        ralsei: `
+        <section class="lado">
+                <h3 class="highlight">Ralsei</h3>
+                <img class="playerstat" src="conteudo/info/ralsei.png">
+                <!--barra de vida-->
+                <p class="icone ataqueralsei">Ataque: 8</p>
+                <p class="icone defesa">Defesa: 2</p>
+                <p class="icone magia">Magia: 7</p>
+                <p>Equipado: Cachecol Vermelho</p>
+            </section>
+            <section>
+                <p class="descricao">LV1 Príncipe Solitário, não tem serventes.</p>
+                <!--colocar uma borda aq-->
+                <p class="dark">* Um príncipe das trevas, ele esperou a vida inteira para finalmente conhecer os heróis previstos pela profecia, para finalmente guiá-los na escuridão.</p>
+                <img class="line" src="conteudo/info/ralsei_line.png">
+        </section>`
+    };
+
+    const container=document.getElementById("info");
+    let botao=null;
+    function mostrarInfo(personagem) {
+        const botoes=document.querySelectorAll("#herois button");
+      if (botao=== personagem) {
+        container.style.display="none";
+        container.style.border="none";
+        container.innerHTML="";
+        botao= null;
+        botoes.forEach(btn=>btn.classList.remove("selecionada"));
+      } else {
+        container.innerHTML=info[personagem];
+        container.style.display="flex";
+        container.style.border="5px ridge white";
+        botao=personagem;
+
+        botoes.forEach(btn=>btn.classList.remove("selecionada"));
+        if(personagem==='kris'){
+            botoes[0].classList.add("selecionada");
+        } else if (personagem==='susie'){
+            botoes[1].classList.add("selecionada");
+        } else{
+            botoes[2].classList.add("selecionada");
+        }
+      }
+    }
+</script>
