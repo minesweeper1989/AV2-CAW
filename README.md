@@ -45,8 +45,7 @@ Itens Opcionais:
 
 ## Observações Futuras
 - **Nota**: 9.5
-- **Feedback**:
-"Olá! Seguem meus comentários sobre sua entrega. A nota será lançada após a correção de todos os trabalhos:
+**Feedback**: "Olá! Seguem meus comentários sobre sua entrega. A nota será lançada após a correção de todos os trabalhos:
 - Organizou imagens em diretório. Não organizou os arquivos externos de estilo e script em diretório;
 - Implementou cabeçalho e rodapé;
 - Fez uso de tags semânticas;
