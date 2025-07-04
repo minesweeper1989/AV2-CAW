@@ -44,6 +44,14 @@ Itens Opcionais:
 - ![Last Updated](https://img.shields.io/github/last-commit/minesweeper1989/AV2-CAW)
 
 ## Observações Futuras
-- **Nota**: TBA
-- **Feedback**: TBA
-Essa parte está garantida para quando se encerrar o período de entregas e a professora enviar a devida correção do trabalho.
+- **Nota**: 9.5
+- **Feedback**: "Olá! Seguem meus comentários sobre sua entrega. A nota será lançada após a correção de todos os trabalhos:
+- Organizou imagens em diretório. Não organizou os arquivos externos de estilo e script em diretório;
+- Implementou cabeçalho e rodapé;
+- Fez uso de tags semânticas;
+- Usou imagens e vídeo;
+- Implementou tabela;
+- Usou script JS interno e externo;
+- Barra lateral: não ficou do jeito que pensei, mas implementou;
+- Navegação entre páginas;
+- Apresentação um pouco confusa: muito conteúdo na 1a página."
